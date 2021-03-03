@@ -3,7 +3,7 @@ class Confiabilidade{
 		boolean u = true;
 		int v = 0;
 		while (u && v < 9){
-			v = u + 2;
+			v = u + 2;	
 			if (v == 6)
 				u = false;            
 		}

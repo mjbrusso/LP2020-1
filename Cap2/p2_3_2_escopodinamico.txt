@@ -1,0 +1,14 @@
+procedimento sub() {
+   inteiro x = 1;
+
+   procedimento sub1() { 
+      escreva(x); 
+   }
+   procedimento sub2() { 
+      inteiro x = 3; 
+      sub1(); 
+   }
+   
+   sub2(); 
+   sub1(); 
+} 
