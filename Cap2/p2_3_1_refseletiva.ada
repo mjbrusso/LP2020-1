@@ -5,7 +5,7 @@ procedure A is
    procedure B is
       x : INTEGER := 10;
    begin
-      	Put(x);
+        Put(x);
         Put(A.x);
    end B;
 begin

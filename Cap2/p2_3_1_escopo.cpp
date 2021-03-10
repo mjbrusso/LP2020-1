@@ -1,6 +1,5 @@
 #include <iostream>
 
-
 float a=0.5;
 
 void f()
@@ -11,9 +10,8 @@ void f()
 
 int main()
 {
-	std::cout << a << std::endl; // Exibe float global
-	
     int a = 2;
+	std::cout << a << std::endl; 
  
 	if(a>0){
 		char a='x';

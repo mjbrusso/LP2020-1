@@ -30,7 +30,7 @@ void exibe_pessoa(pessoa& p, int identacao)
 int main()
 {
 	pessoa p1{"Fulano", {15, 12, 1950}, nullptr};
-	pessoa p2{"Cicrano", {8, 10, 2075}, &p1};
+	pessoa p2{"Cicrano", {8, 10, 1975}, &p1};
 	pessoa p3{"Beltrano", {1, 8, 2013}, &p2};
 	
 	exibe_pessoa(p3, 0);

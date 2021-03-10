@@ -2,8 +2,10 @@ procedimento sub() {
    inteiro x = 1;
 
    procedimento sub1() { 
-      escreva(x); 
+      escreva(x);
+      n = x + 1 
    }
+
    procedimento sub2() { 
       inteiro x = 3; 
       sub1(); 
