@@ -1,7 +1,14 @@
 #include <iostream>
 
+union foo{		// 258
+	bool bar;	// 2
+	char biz;	// 256
+}
+
+foo massa;
+
 union medida{
-	int centimetros;
+	int centimetros; 
 	double metros;	
 };
 
@@ -9,10 +16,6 @@ int main()
 {
 	medida tam;
 
-	std::cout << "Sizeof medida: " << sizeof(tam) << std:: endl
-			  << "    Sizeof centimetro: " << sizeof(tam.centimetros) << std:: endl
-			  << "    Sizeof metros: " << sizeof(tam.metros) << std:: endl  << std:: endl;
-		
 	tam.centimetros = 125;
 	std::cout << "Centimetros: " << tam.centimetros << std:: endl
 			  << "Metros (inválido): " << tam.metros << std:: endl  << std:: endl;	

@@ -1,5 +1,14 @@
 #include <iostream>
 
+struct foo{
+	bool bar;	//	2
+	char biz;   //  256
+};
+
+foo massa;
+
+
+
 struct funcionario{
 	int matricula;
 	char nome[50];

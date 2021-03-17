@@ -6,7 +6,7 @@ program enumexe;
 	    c: array[boolean] of string;
 	    temperaturamedia: array[estacoes] of real;
 		s: string;	
-		podenevar: array[estacoes] of boolean;
+		podenevar: array[estacoes] of boolean; S -> T  
 begin
 	a[1] := 'A';
 	writeln(a[1]);
