@@ -2,13 +2,13 @@
 
 using namespace std;
 
-int f1(){
-    cout << "SIM"<< endl;
+int f0(){
+    cout << "Zero"<< endl;
     return 0;
 }
 
-int f2(){
-    cout << "NAO"<< endl;
+int f1(){
+    cout << "Um"<< endl;
     return 1;
 }
 
@@ -33,15 +33,15 @@ int main()
     
     cout << sizeof(vf) << endl; // Expressão categórica (tamanho)
     
-    //c = f1() + f2();			// Ordem de avaliaçao dos operandos (precedência de operandos)?
-    //cout << c << endl;
+    // c = f0() + f1();			// Ordem de avaliaçao dos operandos (precedência de operandos)?
+    // cout << c << endl;
     
-    //int i=0;
-    //vf[i] = i++;                // Não determinismo na avaliação dos operandos
-    //cout << vf[0] << ' ' << vf[1] << endl;
+    // int i=0;
+    // vf[i] = i++;                // Não determinismo na avaliação dos operandos
+    // cout << vf[0] << ' ' << vf[1] << endl;
 
-    //if(f1() && f2())        //  Curto circuito
-        //cout << "OK" << endl;
+    // if(f0() && f1())        //  Curto circuito
+    //     cout << "OK" << endl;
 	
     return 0;
 }

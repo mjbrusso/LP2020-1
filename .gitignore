@@ -1,3 +1,7 @@
+*
+!*/
+!*.*
+
 # Prerequisites
 *.d
 
@@ -30,3 +34,7 @@
 *.exe
 *.out
 *.app
+
+*.class
+*.jar
+*.ali
