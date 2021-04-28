@@ -28,5 +28,6 @@ void desempilha(tPilha &p) {
 int obtemTopo(const tPilha &p) {
   if (!vazia(p))
     return p.elem[p.topo];
+
   return -1;
 }

@@ -1,8 +1,6 @@
-// TAD brega ("sem classe") em C++
-
 #include <iostream>
 
-#include "p6_2_2_3_1-TAD-Stack.cpp"
+#include "stack.cpp"
 
 int main() {
   Stack p1;

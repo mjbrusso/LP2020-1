@@ -16,8 +16,14 @@ int main() {
   global = cria();
   a = cria();
   b = cria();
+
+  empilha(b, 99);
+  empilha(b, 10);
+  std::cout << obtemTopo(b) << std::endl;
+
   empilha(a, 55);
   preenche(a, 17);
+  desempilha(a);
   preenche(b, 29);
   preenche(global, 23);
 

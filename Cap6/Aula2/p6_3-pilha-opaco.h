@@ -1,7 +1,7 @@
 // Declaração TAD Pilha com tipos opaco
 
 struct tPilha;
-typedef struct tPilha *Pilha;
+typedef struct tPilha * Pilha;
 
 Pilha cria();
 int vazia(const Pilha p);
