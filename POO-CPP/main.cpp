@@ -3,20 +3,19 @@
 #include "stack.cpp"
 
 int main() {
-  Stack p1;
+  stack p1(100);
 
-  stack_init(p1, 20);
+  p1.push(55);
+  p1.push(100);
+  p1.push(2020);
 
-  stack_push(p1, 55);
-  stack_push(p1, 100);
-  stack_push(p1, -2020);
+  while (!p1.empty()) {
+    std::cout << "Size: " << p1.size() << " "
+              << "Top: " << p1.top() << std::endl;
 
-  while (!stack_empty(p1)) {
-    std::cout << "Size: " << stack_size(p1) << " "
-              << "Top: " << stack_top(p1) << std::endl;
-
-    stack_pop(p1);
+    p1.pop();
   }
-
-  stack_destroy(p1);
+  if(true){
+      stack p2;
+  }
 }
