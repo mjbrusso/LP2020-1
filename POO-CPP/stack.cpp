@@ -1,9 +1,12 @@
 #include <iostream>
 #include <stdexcept>
 
+namespace UPF {
+
+template<typename T>
 class stack {
 private:
-  int *values;
+  T *values;
   int top_index;
   int max_size;
 
@@ -11,7 +14,7 @@ public:
   // Operação construtora: cria uma pilha, inicialmente vazia, com espaço para
   // size valores inteiros
   stack(int size = 1000) {
-    values = new int[size];
+    values = new T[size];
     max_size = size;
     top_index = -1;
 
@@ -27,7 +30,7 @@ public:
   // Operações consultoras
   bool empty() { return top_index == -1; }
 
-  int top() {
+  T top() {
     if (!empty())
       return values[top_index];
 
@@ -37,7 +40,7 @@ public:
   int size() { return top_index + 1; }
 
   // Operações atualizadoras
-  void push(int val) {
+  void push(T val) {
     if (top_index < max_size - 1)
       values[++top_index] = val;
     else
@@ -51,3 +54,5 @@ public:
       throw std::out_of_range("Stack underflow");
   }
 };
+
+} // namespace UPF

@@ -2,11 +2,11 @@
 #include <iostream>
 
 int main() {
-  UPF::stack<int> p1, p2;
+  UPF::stack<std::string> p1;
 
-  p1.push(55);
-  p1.push(100);
-  p1.push(2020);
+  p1.push("oi");
+  p1.push("olá");
+  p1.push("e aí?");
 
   while (!p1.empty()) {
     std::cout << "Size: " << p1.size() << " "
