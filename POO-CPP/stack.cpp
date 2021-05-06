@@ -3,8 +3,7 @@
 
 namespace UPF {
 
-template<typename T>
-class stack {
+template <typename T> class stack {
 private:
   T *values;
   int top_index;
@@ -19,6 +18,14 @@ public:
     top_index = -1;
 
     std::cout << "Criou pilha com max_size=" << max_size << std::endl;
+  }
+
+  stack(stack<T> &other) {
+      values = new T[other.max_size];
+      max_size = other.max_size;
+      top_index = other.top_index;
+      std::copy(other.values, other.values+other.size(), values);
+      std::cout << "Criou cópia de pilha com max_size=" << max_size << std::endl;
   }
 
   // Operação destrutora
@@ -52,6 +59,19 @@ public:
       top_index--;
     else
       throw std::out_of_range("Stack underflow");
+  }
+
+  stack<T> &operator=(stack<T> &rhs) {
+    if (this != &rhs) {
+      delete[] values;
+      values = new T[rhs.max_size];
+      for (int i = 0; i <= rhs.top_index; i++)
+        values[i] = rhs.values[i];
+
+      max_size = rhs.max_size;
+      top_index = rhs.top_index;
+    }
+    return *this;
   }
 };
 
